@@ -25,16 +25,21 @@ module.exports = {
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
         'ecmaVersion': 'latest',
-    sourceType: 'module',
+        sourceType: 'module',
     },
     'plugins': [
         '@typescript-eslint',
         'prettier'
     ],
     'rules': {
-        'prettier/prettier': 2, //means error
+        'prettier/prettier': [
+            'error',
+            {
+                'endOfLine': 'auto'
+            }
+        ], //means error
         quotes: ['error', 'single'],
-        'no-console': 1, //means error
+        'no-console': 0, //means error
         'no-var': 'error',
         'prefer-const': 'error',
     }
