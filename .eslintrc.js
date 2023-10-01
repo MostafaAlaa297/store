@@ -37,9 +37,11 @@ module.exports = {
             {
                 'endOfLine': 'auto'
             }
-        ], //means error
+        ],
+        'no-unused-vars': 'warn',
+        '@typescript-eslint/no-unused-vars': 'warn',
         quotes: ['error', 'single'],
-        'no-console': 0, //means error
+        'no-console': 0,
         'no-var': 'error',
         'prefer-const': 'error',
     }
